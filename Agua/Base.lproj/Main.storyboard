@@ -24,6 +24,27 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWT-Al-6ir" customClass="PushButton" customModule="Agua" customModuleProvider="target">
+                                <rect key="frame" x="171.66666666666666" y="608.66666666666663" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="g0p-bi-KPd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="iLF-kd-dI3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -31,6 +52,8 @@
                         <constraints>
                             <constraint firstItem="Ik8-vD-BDb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="7Wo-eK-WIW"/>
                             <constraint firstItem="Ik8-vD-BDb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IZW-Qg-hHa"/>
+                            <constraint firstItem="gWT-Al-6ir" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rwo-pv-pab"/>
+                            <constraint firstItem="gWT-Al-6ir" firstAttribute="top" secondItem="Ik8-vD-BDb" secondAttribute="bottom" constant="20" id="TqX-XT-yWL"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -43,10 +66,16 @@
         <designable name="Ik8-vD-BDb">
             <size key="intrinsicContentSize" width="24" height="14"/>
         </designable>
+        <designable name="gWT-Al-6ir">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
     </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
