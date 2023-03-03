@@ -52,53 +52,94 @@
                                     <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1CA-w2-oQW"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0O-C8-4Sr" customClass="CounterView" customModule="Agua">
-                                <rect key="frame" x="72.666666666666686" y="162.66666666666663" width="230" height="230"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WmD-ag-4r2" userLabel="Container View">
+                                <rect key="frame" x="37.666666666666657" y="126" width="300" height="300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye2-NO-7R3">
-                                        <rect key="frame" x="103.99999999999999" y="93.333333333333343" width="22" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0O-C8-4Sr" customClass="CounterView" customModule="Agua">
+                                        <rect key="frame" x="35" y="35" width="230" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye2-NO-7R3">
+                                                <rect key="frame" x="103.99999999999999" y="93.666666666666657" width="22" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ye2-NO-7R3" firstAttribute="centerX" secondItem="A0O-C8-4Sr" secondAttribute="centerX" id="6dT-EB-Yco"/>
+                                            <constraint firstItem="ye2-NO-7R3" firstAttribute="centerY" secondItem="A0O-C8-4Sr" secondAttribute="centerY" id="JKv-c1-XHq"/>
+                                            <constraint firstAttribute="height" constant="230" id="Z9j-2g-cAV"/>
+                                            <constraint firstAttribute="width" constant="230" id="hWz-iC-eYj"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                                <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                                <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxV-YX-TYa" customClass="GraphView" customModule="Agua" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="300" height="250"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Zhe-Fx-65U"/>
+                                            <constraint firstAttribute="height" constant="250" id="grp-fg-pDA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.98039215686274506" green="0.9137254901960784" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="0.9882352941176471" green="0.30980392156862746" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="ye2-NO-7R3" firstAttribute="centerX" secondItem="A0O-C8-4Sr" secondAttribute="centerX" id="6dT-EB-Yco"/>
-                                    <constraint firstItem="ye2-NO-7R3" firstAttribute="centerY" secondItem="A0O-C8-4Sr" secondAttribute="centerY" id="JKv-c1-XHq"/>
-                                    <constraint firstAttribute="height" constant="230" id="Z9j-2g-cAV"/>
-                                    <constraint firstAttribute="width" constant="230" id="hWz-iC-eYj"/>
+                                    <constraint firstItem="A0O-C8-4Sr" firstAttribute="centerY" secondItem="WmD-ag-4r2" secondAttribute="centerY" id="59M-XF-SFq"/>
+                                    <constraint firstItem="gxV-YX-TYa" firstAttribute="centerY" secondItem="WmD-ag-4r2" secondAttribute="centerY" id="AAr-pf-HcG"/>
+                                    <constraint firstAttribute="height" constant="300" id="Cmc-0L-VKC"/>
+                                    <constraint firstItem="A0O-C8-4Sr" firstAttribute="centerX" secondItem="WmD-ag-4r2" secondAttribute="centerX" id="GhT-s9-gf0"/>
+                                    <constraint firstAttribute="width" constant="300" id="VOv-j0-zTK"/>
+                                    <constraint firstItem="gxV-YX-TYa" firstAttribute="centerX" secondItem="WmD-ag-4r2" secondAttribute="centerX" id="aiO-20-4pk"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
-                                        <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
-                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Ik8-vD-BDb" firstAttribute="top" secondItem="A0O-C8-4Sr" secondAttribute="bottom" constant="70" id="3lG-c1-lpI"/>
                             <constraint firstItem="Ik8-vD-BDb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="7Wo-eK-WIW"/>
-                            <constraint firstItem="A0O-C8-4Sr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Chj-be-eqS"/>
                             <constraint firstItem="Ik8-vD-BDb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IZW-Qg-hHa"/>
+                            <constraint firstItem="WmD-ag-4r2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Klv-Wv-RDn"/>
                             <constraint firstItem="gWT-Al-6ir" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rwo-pv-pab"/>
                             <constraint firstItem="gWT-Al-6ir" firstAttribute="top" secondItem="Ik8-vD-BDb" secondAttribute="bottom" constant="20" id="TqX-XT-yWL"/>
+                            <constraint firstItem="WmD-ag-4r2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-130" id="UGE-u3-IT2"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kB4-f1-ubR" appends="YES" id="2Wz-9K-CMd"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="WmD-ag-4r2" id="lFv-m1-rn3"/>
                         <outlet property="counterLabel" destination="ye2-NO-7R3" id="8yG-bM-buk"/>
                         <outlet property="counterView" destination="A0O-C8-4Sr" id="J3S-Kb-xMg"/>
+                        <outlet property="graphView" destination="gxV-YX-TYa" id="uY7-oP-4gq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kB4-f1-ubR">
+                    <connections>
+                        <action selector="counterViewTap:" destination="BYZ-38-t0r" id="eDh-1m-JO7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="132" y="-27"/>
         </scene>
