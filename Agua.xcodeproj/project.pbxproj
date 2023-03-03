@@ -14,6 +14,7 @@
 		6664C2F129B0D2FB00E9A7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6664C2F029B0D2FB00E9A7B6 /* Assets.xcassets */; };
 		6664C2F429B0D2FB00E9A7B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6664C2F229B0D2FB00E9A7B6 /* LaunchScreen.storyboard */; };
 		6664C2FC29B0D33500E9A7B6 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664C2FB29B0D33500E9A7B6 /* PushButton.swift */; };
+		6664C2FE29B200ED00E9A7B6 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664C2FD29B200ED00E9A7B6 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6664C2F329B0D2FB00E9A7B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6664C2F529B0D2FB00E9A7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6664C2FB29B0D33500E9A7B6 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		6664C2FD29B200ED00E9A7B6 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				6664C2E929B0D2FA00E9A7B6 /* SceneDelegate.swift */,
 				6664C2EB29B0D2FA00E9A7B6 /* ViewController.swift */,
 				6664C2FB29B0D33500E9A7B6 /* PushButton.swift */,
+				6664C2FD29B200ED00E9A7B6 /* CounterView.swift */,
 				6664C2ED29B0D2FA00E9A7B6 /* Main.storyboard */,
 				6664C2F029B0D2FB00E9A7B6 /* Assets.xcassets */,
 				6664C2F229B0D2FB00E9A7B6 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				6664C2E829B0D2FA00E9A7B6 /* AppDelegate.swift in Sources */,
 				6664C2EA29B0D2FA00E9A7B6 /* SceneDelegate.swift in Sources */,
 				6664C2FC29B0D33500E9A7B6 /* PushButton.swift in Sources */,
+				6664C2FE29B200ED00E9A7B6 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
